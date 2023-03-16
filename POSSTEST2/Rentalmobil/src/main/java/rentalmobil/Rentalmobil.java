@@ -56,6 +56,7 @@ public class Rentalmobil {
                }
                System.out.println("--------------------------------------------------");
             break;
+                 
             case 3:
                boolean found = false;
                System.out.print("masukan kode yang dicari :");
@@ -107,6 +108,7 @@ public class Rentalmobil {
 
                
             break;
+                 
             case 5:
                 found = false;
                System.out.print("masukan kode yang ingin dihapus :");
