@@ -27,8 +27,8 @@ public class Rentalmobil {
          System.out.println("1.INSERT");
          System.out.println("2.DISPLAY");
          System.out.println("3.SEARCH");
-         System.out.println("4.DELETE");
-         System.out.println("5.UPDATE");
+         System.out.println("4.UPDATE");
+         System.out.println("5.DELETE");
          System.out.print("Enter Your Choice : ");
          ch = s.nextInt();
 
@@ -78,28 +78,6 @@ public class Rentalmobil {
 
             case 4:
                found = false;
-               System.out.print("masukan kode yang ingin dihapus :");
-               kode_perental = s.nextInt();
-               System.out.println("--------------------------------------------------");
-               i = c.iterator();
-               while(i.hasNext()){
-                  perental e = i.next();
-                  if(e.getkode_perental() == kode_perental)  {
-                     i.remove();
-                     found = true;
-                  }
-               }
-               
-               if(!found){
-                  System.out.println("Record Not Found");
-               }else{
-                  System.out.println("Record is Deleted Successfully...!");
-               }
-
-               System.out.println("--------------------------------------------------");
-            break;
-            case 5:
-               found = false;
                System.out.print("masukan kode yang ingin diupdate :");
                kode_perental = s.nextInt();
                
@@ -129,7 +107,28 @@ public class Rentalmobil {
 
                
             break;
+            case 5:
+                found = false;
+               System.out.print("masukan kode yang ingin dihapus :");
+               kode_perental = s.nextInt();
+               System.out.println("--------------------------------------------------");
+               i = c.iterator();
+               while(i.hasNext()){
+                  perental e = i.next();
+                  if(e.getkode_perental() == kode_perental)  {
+                     i.remove();
+                     found = true;
+                  }
+               }
+               
+               if(!found){
+                  System.out.println("Record Not Found");
+               }else{
+                  System.out.println("Record is Deleted Successfully...!");
+               }
 
+               System.out.println("--------------------------------------------------");
+            break;
             
          }
       }while(ch!=0);
