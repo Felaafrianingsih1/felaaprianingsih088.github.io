@@ -120,14 +120,14 @@ public class Rentalmobil {
                     System.out.print("Masukkan data yang ingin diedit : ");
                     int menuEdit = Integer.parseInt(br.readLine());
                     if(menuEdit == 1){
-                        //Code Process By 079
+                        
                         System.out.println("Masukan Nama  : "); String findsewa = br.readLine();
                         
                         for(datasewamobil sewa : dtsewamobil){
                             if(sewa.getnamaPenyewa().equals(findsewa)){
                                 System.out.println("Nama  : "); sewa.setnamaPenyewa(br.readLine());
                                 System.out.println("alamat         : "); sewa.setalamat(br.readLine());
-                                System.out.println("hp           : "); sewa.setnohp(Integer.parseInt(br.readLine()));
+                                System.out.println("nomor hp           : "); sewa.setnohp(Integer.parseInt(br.readLine()));
                                 System.out.println("Nama  : "); sewa.setnamamobil(br.readLine());
                                 System.out.println("idsewa            : "); sewa.setidsewa(Integer.parseInt(br.readLine()));
                                 System.out.println("harga             : "); sewa.sethargaperhari(Integer.parseInt(br.readLine()));
@@ -162,7 +162,7 @@ public class Rentalmobil {
                     System.out.print("Masukkan data yang ingin dihapus : ");
                     int menuHapus = Integer.parseInt(br.readLine());
                     if(menuHapus == 1){
-                        //Code Process By 079
+                       
                         System.out.println("Masukan Nama penyewa : "); String findswl = br.readLine();
                         
                         for(int i = 0; i < dtsewamobil.size(); i++){
@@ -173,7 +173,7 @@ public class Rentalmobil {
                         }
                                           
                     }else if(menuHapus == 2){
-                        //Code Process By 079
+                        
                         System.out.println("Masukan Nama penyewa : "); String findkmbll= br.readLine();
                         
                         for(int i = 0; i < dtmobilkembali.size(); i++){
